@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #2f80ed;
+    --color-secondary: #2d9cdb;
+    --color-primary-hover: #0369a1;
+    --color-text-primary: #333333;
+    --color-text-secondary: #828282;
+    --color-text-placeholder: #6b7280;
+    --color-text-inverted: #ffffff;
+    --color-input-border: #bdbdbd;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply flex min-h-full h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8;
+  }
+  .app-input {
+    @apply appearance-none rounded-none border border-primary px-3 py-2 text-primary placeholder-primary focus:z-10 focus:text-primary focus:outline-none focus:ring-primary sm:text-sm;
+  }
+  .app-primary-btn {
+    @apply rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-inverted hover:bg-primary-hover focus:outline-none focus:ring-2 focus:bg-primary focus:ring-offset-2;
+  }
+}
