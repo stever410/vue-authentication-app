@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import { initFirebase } from "./config/firebase";
 
-createApp(App).mount('#app')
+initFirebase();
+createApp(App).mount("#app");

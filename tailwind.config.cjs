@@ -8,8 +8,11 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
+      outlineColor: {
+        primary: "var(--color-outline)",
+      },
       ringColor: {
-        primary: "var(--color-text-primary)",
+        primary: "var(--color-primary)",
       },
       borderColor: {
         primary: "var(--color-input-border)",
